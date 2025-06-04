@@ -9,7 +9,7 @@ sensor ty target @y
 set i 1
 ubind unit
 sensor uid @unit @flag
-jump -1 notEqual uid select_uid
+jump 28 notEqual uid select_uid
 ulocate ore core true resource outx outy found building
 sensor ti @unit @totalItems
 jump 18 equal ti 0
