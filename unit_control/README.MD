@@ -7,10 +7,11 @@
 1   set unit @mono
 2   set max_unit 24
 ```
-- **unit**  
+- **`unit`**  
 ID(flag)를 부여할 유닛 종류  
-- **max_unit**  
-현재 보유중인 유닛 개수
+- **`max_unit`**  
+현재 보유중인 유닛 개수  
+(개수 정확히 맞출 것. 생산 중이라면 냅뒀다가 초기화 코드 한번 실행 후 다시 지금 코드 실행하면 됨.)
 ### 2) 실행 영역
 ```assembly
 3   print "Execution Area"
