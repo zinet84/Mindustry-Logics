@@ -2,7 +2,7 @@ print "Variable Area"
 set unit @mono
 set select_uid 1
 set source nucleus1
-set target factory2
+set target factory1
 set resource @silicon
 set res_amount 30
 print "Execution Area"
@@ -13,16 +13,15 @@ sensor ty target @y
 set i 1
 ubind unit
 sensor uid @unit @flag
-jump 27 notEqual uid select_uid
+jump 26 notEqual uid select_uid
 sensor res target resource
+jump 21 lessThan res res_amount
 ucontrol move sx sy 0 0 0
 ucontrol itemDrop source 999 0 0 0
-jump 27 greaterThanEq res res_amount
-ucontrol move sx sy 0 0 0
-ucontrol itemDrop source 999 0 0 0
+jump 26 always res res_amount
 ucontrol itemTake source resource res_amount 0 0
 sensor res_have @unit resource
-jump 20 equal res_have false
+jump 18 equal res_have false
 ucontrol move tx ty 0 0 0
 ucontrol itemDrop target 999 30 0 0
 op add i i 1
