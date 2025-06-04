@@ -1,6 +1,7 @@
 # 코드 설명
 ## [assign_unit_id.asm](assign_unit_id.asm)
-각 유닛마다 ID(flag)를 부여하는 코드
+각 유닛마다 ID(flag)를 부여하는 코드  
+![1](img/s22172306042025.png) ![2](img/s22191606042025.png)
 ### 1) 변수 영역
 ```assembly
 0   print "Variable Area"
